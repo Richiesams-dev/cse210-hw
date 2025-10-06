@@ -1,9 +1,28 @@
 using System;
+using System.Security.Cryptography.X509Certificates;
 
 class Program
 {
-    static void Main(string[] args)
+
+    Public class person
     {
-        Console.WriteLine("Hello World! This is the Homework Project.");
+        public string GetName()
+        {
+            return "Richman";
+        }
+
     }
+
+    public class student : person
+    {
+        public string GetId()
+        {
+            return "12345678";
+        }
+    }
+
+    Student student = new Student();
+    string name = student.GetName();
+    Console.WriteLine(name);
+
 }
