@@ -1,28 +1,14 @@
 using System;
-using System.Security.Cryptography.X509Certificates;
 
 class Program
 {
-
-    Public class person
+    static void Main(string[] args)
     {
-        public string GetName()
-        {
-            return "Richman";
-        }
+        Console.WriteLine("Enter your name: ");
+        string UserName = Console.ReadLine();
 
+        Console.WriteLine("Your name is " + UserName);
     }
-
-    public class student : person
-    {
-        public string GetId()
-        {
-            return "12345678";
-        }
-    }
-
-    Student student = new Student();
-    string name = student.GetName();
-    Console.WriteLine(name);
+    
 
 }
